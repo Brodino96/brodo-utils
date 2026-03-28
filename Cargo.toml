@@ -1,0 +1,16 @@
+[package]
+name = "brodo-utils"
+version = "0.1.0"
+edition = "2024"
+default-run = "brodo-utils"
+
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+sha2 = "0.10"
+sha1 = "0.10"
+md-5 = "0.10"
+blake2 = "0.10"
+blake3 = "1"
+digest = "0.10"
+walkdir = "2"
