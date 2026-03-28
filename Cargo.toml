@@ -1,5 +1,6 @@
 [package]
 name = "brodo-utils"
+description = "A collection of utility commands"
 version = "0.1.0"
 edition = "2024"
 default-run = "brodo-utils"
