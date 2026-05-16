@@ -13,6 +13,8 @@ struct Cli {
 #[derive(Subcommand)]
 enum Commands {
     Hasher(commands::hasher::HasherArgs),
+    /// Minecraft-related utilities
+    Minecraft(commands::minecraft::MinecraftArgs),
 }
 
 fn main() {
@@ -20,5 +22,6 @@ fn main() {
 
     match cli.command {
         Commands::Hasher(args) => commands::hasher::run(args),
+        Commands::Minecraft(args) => commands::minecraft::run(args),
     }
 }
